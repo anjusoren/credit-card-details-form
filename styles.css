@@ -1,0 +1,366 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+input {
+    cursor:pointer;
+}
+
+.section-1{
+    background-image: url("./images/bg-main-desktop.png");
+    height:15rem;
+    background-repeat: no-repeat;
+    position:relative;
+    width:100%;
+}
+
+.card1{
+    background-image:url("./images/bg-card-back.png");
+    height:12rem;
+    width:70%;
+    margin:auto;
+    background-size:contain;
+    border: 2px;
+    position:absolute;
+    top:1rem;
+    left:2rem;
+    right:1rem;
+    background-repeat: no-repeat;
+    display:block;
+    color:white;
+}
+
+.card2{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    z-index:999;
+    padding:1em;
+}
+
+.circles{
+    display:flex;
+    gap:0.5rem;
+}
+.card2 > div> div:nth-child(1){
+    margin-left:1rem;
+    margin-top:1rem;
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
+    background-color: white;
+}
+
+.card2 > div> div:nth-child(2){
+    margin-top:1rem;
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
+    border:1px solid white;
+}
+
+.digit{
+    padding-top:0.1rem;
+    color:white;
+    display:block;
+    
+    width:75%;
+    margin-left:1rem;
+}
+
+.inline-content{
+    padding-top: 0.1rem;
+    color:white;
+    margin-left:1rem;
+    display:flex;
+    justify-content: space-between;
+    margin-right:1rem;
+}
+
+.card2{
+    background-image:url("./images/bg-card-front.png") ;
+    height:12rem;
+    background-repeat: no-repeat;
+    width:70%;
+    background-size: contain;
+    position:absolute;
+    top:8rem;
+    left:1.5rem;
+}
+
+.form{
+    padding:5rem;
+    display:flex;
+    flex-direction: column;
+    font-weight:bold;
+    color: hsl(278, 68%, 11%);
+}
+
+.form > input{
+    font-size: 15px;
+    padding:0.5em;
+    border-radius: 5px;
+    border:solid hsl(283, 7%, 81%) 1px;
+}
+
+.form-content{
+    padding-top:1rem;
+}
+
+.form > button {
+    margin-top:2rem;
+    background-color: hsl(278, 68%, 11%);
+    line-height: 2rem;
+    font-size:15px;
+    color:white;
+    border:none;
+    border-radius:10px;
+}
+
+.last-section{
+    display: flex;
+    justify-content: space-between;
+}
+.last-section > input{
+    cursor:pointer;
+}
+
+.card-details{
+    display:inline-block;
+    padding-top:1rem;
+}
+
+.card-details >  input{
+    padding:0.5em;
+    width: 5rem;
+    border-radius: 5px;
+    border:solid hsl(283, 7%, 81%) 1px;
+    font-size: 15px;
+}
+.card-details >  input:nth-child(1){
+    padding:0.5em;
+    width: 5rem;
+    border-radius: 5px;
+   
+    border:solid hsl(283, 7%, 81%) 1px;
+    font-size: 15px;
+}
+
+.card-details >  input:nth-child(3){
+    padding:0.5em;
+    width: 5rem;
+    border-radius: 5px;
+    border:solid hsl(283, 7%, 81%) 1px;
+    font-size: 15px;
+   
+}
+
+.right-section{
+    z-index:999;
+}
+
+::placeholder{
+    color:hsl(283, 7%, 81%);
+    font-family: 'Space Grotesk', sans-serif;
+}
+.right-section{
+    
+    padding:5em;
+   justify-content: center;
+    display: block;
+    margin: auto;
+    
+}
+.confirm-card{
+    background-image:url("./images/icon-complete.svg");
+    height:4rem;
+    width:50%;
+    background-size:contain;
+    border:2px;
+    background-repeat: no-repeat;
+    display:block;
+    color:white;
+    margin-top:2em;
+}
+
+.thank-you{
+    align-self: center;
+    letter-spacing: 5px;
+    width:75%;
+}
+
+.continue-button{
+    padding:0.5em;
+    background-color: hsl(278, 68%, 11%);
+    line-height: 2rem;
+    font-size:15px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+@media(max-width:500px){
+
+    .form{
+        padding:0.1rem;
+    }
+    .card2{
+        gap:0.1rem;
+    }
+
+    .card2 > div> div:nth-child(1),.card2 > div> div:nth-child(2){
+        margin-top:0.5rem;
+    }
+
+    .month{
+        width:1rem;
+    }
+}
+
+@media(max-width:600px){
+    form{
+        padding:0.5rem;
+    }
+
+    .card2{
+        padding:1em;
+    }
+}
+
+@media(max-width:400px){
+    
+    .card2{
+        gap:0.08em;
+    }
+    .card2 > div> div:nth-child(1),.card2 > div> div:nth-child(2){
+        margin-top:0.1rem;
+    }
+    
+}
+
+@media(min-width:800px){
+    .right-section{
+        z-index:999;
+    }
+    .section{
+       display:flex;
+       justify-content: space-between;
+      gap:6rem;
+       align-items: center;
+       height:100vh;
+       position:relative;
+    }
+
+    .section-1{
+        height:100vh;
+        width:60vh;
+    }
+
+    .card1{
+        position:absolute;
+        top:18rem;
+        left:10rem;
+    }
+
+    .card2{
+        position:absolute;
+        left:8rem;
+        top:5rem;
+    }
+
+    .card2{
+        display:flex;
+        flex-direction: column;
+        gap:0.8rem;
+        z-index:999;
+        padding:1em;
+    }
+    
+    .circles{
+        display:flex;
+        gap:0.5rem;
+    }
+    .card2 > div> div:nth-child(1){
+        margin-left:1rem;
+        margin-top:0.6rem;
+        height:2rem;
+        width:2rem;
+        border-radius:50%;
+        background-color: white;
+    }
+    
+    .card2 > div> div:nth-child(2){
+        margin-top:0.6rem;
+        height:2rem;
+        width:2rem;
+        border-radius:50%;
+        border:1px solid white;
+    }
+    
+    .digit{
+        padding-top:0.1rem;
+        color:white;
+        width:25%;
+        margin-left:1rem;
+      
+    }
+    
+    .inline-content{
+        padding-top: 0.1rem;
+        color:white;
+        margin-left:1rem;
+        display:flex;
+        width:30%;
+        justify-content: space-between;
+        margin-right:1rem;
+        
+    }
+
+    .form{
+          padding:4rem;
+         
+    }
+  
+    .form > input{
+        font-size: 18px;
+        padding:0.5em;
+        border-radius: 5px;
+        border:solid hsl(283, 7%, 81%) 1px;
+       
+    }
+            
+    .form-content{
+        padding-top:1.5rem;
+        padding-bottom:0.2rem;
+    }
+        
+    .last-section{
+        display: flex;
+        gap:1em;
+    }
+     
+    .form > button{
+        margin-top:2rem;
+        background-color: hsl(278, 68%, 11%);
+        line-height: 2.5rem;
+        font-size:18px;
+        color:white;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+    }
+}
+
+@media (max-width:800px) {
+.section-1{
+    width:100vw;
+    background-size: cover;
+}    
+}

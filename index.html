@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit-card-details-form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+    </style>
+        
+</head>
+<body>
+    <div class="section">
+ <div class="left-section">
+    <div class="section-1"></div>
+    <div class="card1"></div>
+    <div class="card2">
+     <div class="circles">
+         <div class="colored-circle"></div>
+         <div class="outline-circle"></div>
+     </div>
+     <p class="digit">0000&nbsp;0000&nbsp;0000&nbsp;0000</p>
+     <div class="inline-content">
+         <p>JANE APPLESEED</p>
+         <p>00/00</p>
+     </div>
+    </div>
+ </div>
+  <div class="right-section">
+    <form class="form" action="confirm.html" action="GET">
+        <label for="cardholder-name" class="form-content">
+            CARDHOLDER NAME</label>
+        <input type="text" placeholder="e.g. Jane Appleseed" required>
+        <label for="card-number" class="form-content">CARD NUMBER</label>
+        <input type="number" placeholder="e.g. 1234 5678 9123 0000" required min="1111111111111111" max="9999999999999999">
+        <div class="last-section">
+            <div class="card-details">
+                <label for="exp-date" class="form-content">EXP.DATE (MM/YY)</label><br/>
+                <input type="number" name="month" id="month" class="month" placeholder="MM" required min="1"max=12>
+                <input type="number" name="year" id="year" class="year" placeholder="YYYY" required min="2022" max="2050">
+            </div>
+            <div class="card-details">
+                <label for="exp-date" class="form-content" required min="111" max="999">CVV</label><br/>
+                <input type="number" placeholder="e.g. 123">
+                
+            </div>
+        </div>
+        <button type="submit">Confirm</button>
+       </form>
+  </div>
+</div>
+</body>
+</html>
